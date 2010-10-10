@@ -34,7 +34,7 @@ figure img {width: 100%;}
 
 
 /*
-	Typography presets (lessframework.com)
+	Typography
 	------------------
 */
 
@@ -70,26 +70,6 @@ figure img {width: 100%;}
 	line-height: 18px;
 } 
 
-
-::selection 	 {background: rgb(255,255,0);}
-::-moz-selection {background: rgb(255,255,0);}
-
-/*
-	Maori Specific Template
-	------------------
-*/
-
-#wrapper { z-index:1; position:absolute;}
-
-#content{
--webkit-border-radius: 0 10px 10px 0;
-   -moz-border-radius: 0 10px 10px 0;
-        border-radius: 0 10px 10px 0;
-padding:15px;
-margin-top:50px;
-
-}
-
 li{
 list-style: square;
 margin-left:30px;
@@ -101,12 +81,64 @@ font-size:20px;
 }
 
 h1{
-font-size:100px;
+font-size:60px;
 }
 
 h2{
-font-size:30px;
+font-size:20px;
 }
+
+body{
+ font-family: 'Josefin Sans Std Light', arial, serif;
+}
+
+
+a{
+color:black;
+}
+
+a:hover {
+color:gray;
+}
+
+.title{
+font-family: 'Reenie Beanie', arial, serif;	
+}
+
+/*::selection 	 {background: rgb(255,255,0);}
+::-moz-selection {background: rgb(255,255,0);}
+*/
+/*
+	Box Layout
+	------------------
+*/
+
+#wrapper { z-index:1; position:absolute;}
+
+.solidbox{
+-webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+        border-radius: 10px;
+padding:10px;
+background-color:white;
+}
+
+header{
+	margin: 80px 0 0 60px;
+	width: 540px;
+}
+
+#content{
+/*	width: 232px;*/
+	padding: 5px;
+	text-align: center;
+	/*margin-top:40px;*/
+	position: fixed;
+	bottom: 100px;
+	right: 120px;
+
+}
+
 
 footer{
 -webkit-border-radius: 10px 10px 0 0;
@@ -120,6 +152,16 @@ z-index:3000;
 bottom:0;
 right:0;
 }
+
+
+.title h1{
+display: inline;
+
+}
+.title h3 {
+	display: inline;
+}
+
 
 #supersize { position:fixed; }
 #supersize img { height:100%; width:100%; position: absolute; z-index: 0; }
